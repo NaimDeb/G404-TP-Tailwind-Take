@@ -225,66 +225,111 @@
     </section>
 
     <!-- Section buy -->
-    <section class="px-14 py-16 flex flex-col gap-12">
-      <article>
-        <div
-          class="bg-[#e1e1e1] text-neutral-off-white py-2 px-3 border rounded-md mb-10 w-fit text-sm"
-        >
-          LEGACY
-        </div>
-      <div class="flex flex-col gap-4">
-        <h3 class="text-2xl">Go it solo</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
-          voluptatem delectus aspernatur alias cupiditate cum id deserunt libero
-          nesciunt voluptas.
-        </p>
-        <a href="#" class="bg-[#82ca9c]  px-3 py-2 rounded text-neutral-off-white font-bold text-sm w-fit">BUY NOW $9</a>
-        <div class="flex gap-4 text-neutral-gray text-3xl">
-          <i class="fab fa-apple"></i>
-          <i class="fab fa-windows"></i>
-        </div>
-      </div>
-      </article>
+    <section class="px-14 py-16">
+      <ul class="flex flex-col gap-12">
+        <li>
+          <input type="radio" name="buy" id="buy-solo" value="buy-solo" class="peer hidden" />
+          <label
+            for="buy-solo"
+            class=" peer-checked:bg-white peer-checked:drop-shadow-2xl peer-checked:border-2 peer-checked:border-black inline-flex p-5"
+          >
+          <div class="block">
+            <div
+              class="bg-[#e1e1e1] text-neutral-off-white py-2 px-3 border rounded-md mb-10 w-fit text-sm"
+            >
+              LEGACY
+            </div>
 
-      <article>
-        <div
-          class="bg-[#bd8cbf] text-neutral-off-white py-2 px-3 border rounded-md mb-10 w-fit text-sm"
-        >
-          MOST POPULAR
-        </div>
-      <div class="flex flex-col gap-4">
-        <h3 class="text-2xl">Team Plan</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
-          voluptatem delectus aspernatur alias cupiditate cum id deserunt libero
-          nesciunt voluptas.
-        </p>
-        <a href="#" class="bg-[#82ca9c]  px-3 py-2 rounded text-neutral-off-white font-bold text-sm w-fit">BUY NOW $18</a>
-        <div class="flex gap-4 text-neutral-gray text-3xl">
-          <i class="fab fa-apple"></i>
-          <i class="fab fa-windows"></i>
-        </div>
-      </div>
-      </article>
+            <div class="flex flex-col gap-4">
+              <h3 class="text-2xl">Go it solo</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
+                voluptatem delectus aspernatur alias cupiditate cum id deserunt
+                libero nesciunt voluptas.
+              </p>
+              <a
+                href="#"
+                class="bg-[#82ca9c] px-3 py-2 rounded text-neutral-off-white font-bold text-sm w-fit"
+                >BUY NOW $9</a
+              >
+              <div class="flex gap-4 text-neutral-gray text-3xl">
+                <i class="fab fa-apple"></i>
+                <i class="fab fa-windows"></i>
+              </div>
+            </div>
+          </div>
+
+          </label>
+        </li>
+
+        <li>
+          <input type="radio" name="buy" value="buy-team" id="buy-team" class="peer hidden" />
+          <label
+            for="buy-team"
+            class="peer-checked:bg-white peer-checked:drop-shadow-2xl peer-checked:border-2 peer-checked:border-black inline-flex p-5"
+          >
+          <div class="block">
+            <div
+              class="bg-[#bd8cbf] text-neutral-off-white py-2 px-3 border rounded-md mb-10 w-fit text-sm"
+            >
+              MOST POPULAR
+            </div>
+            <div class="flex flex-col gap-4">
+              <h3 class="text-2xl">Team Plan</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
+                voluptatem delectus aspernatur alias cupiditate cum id deserunt
+                libero nesciunt voluptas.
+              </p>
+              <a
+                href="#"
+                class="bg-[#82ca9c] px-3 py-2 rounded text-neutral-off-white font-bold text-sm w-fit"
+                >BUY NOW $18</a
+              >
+              <div class="flex gap-4 text-neutral-gray text-3xl">
+                <i class="fab fa-apple"></i>
+                <i class="fab fa-windows"></i>
+              </div>
+            </div>
+          </div>
 
 
+          </label>
+        </li>
+      </ul>
     </section>
 
-<!-- Footer -->
-    <footer class="px-12 py-32 bg-[#192431] flex flex-col gap-3 text-neutral-off-white">
+    <!-- Footer -->
+    <footer
+      class="px-12 py-32 bg-[#192431] flex flex-col gap-3 text-neutral-off-white"
+    >
       <p class="text-sm">Get in touch</p>
-      <p class="text-sm">Lorem ipsum dolor sit amet. consectetur adipisicing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      <p class="text-sm">
+        Lorem ipsum dolor sit amet. consectetur adipisicing elit. sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim
+        veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
       </p>
       <p class="text-sm">Stay in touch</p>
 
       <!-- Input -->
       <div class="pb-4">
-      <div class="relative">
-        <input type="text" name="email" class="block w-full rounded border-0 py-1.5 pr-20 text-gray-900 ">
-        <div class="absolute -inset-y-0 right-0 bg-[#82ca9c] text-neutral-off-white w-8 text-xl p-1 text-center ">✓</div>
-      </div>
-      <p class="text-xs text-gray-400 py-1">We dont send spam. Actually, who are we kidding, we'll spam the shit out of you're inbox</p>
+        <div class="relative">
+          <input
+            type="text"
+            name="email"
+            class="block w-full rounded border-0 py-1.5 pr-20 text-gray-900"
+          />
+          <div
+            class="absolute -inset-y-0 right-0 bg-[#82ca9c] text-neutral-off-white w-8 text-xl p-1 text-center"
+          >
+            ✓
+          </div>
+        </div>
+        <p class="text-xs text-gray-400 py-1">
+          We dont send spam. Actually, who are we kidding, we'll spam the shit
+          out of you're inbox
+        </p>
       </div>
 
       <!-- Navs -->
@@ -292,7 +337,6 @@
         <div class="flex flex-col gap-3">
           <h6>Resources</h6>
           <nav>
-            
             <ul>
               <li>Tour</li>
               <li>Customers</li>
@@ -304,8 +348,8 @@
           </nav>
         </div>
         <div class="flex flex-col gap-3">
-           <h6>How To's</h6>
-           <nav>
+          <h6>How To's</h6>
+          <nav>
             <ul>
               <li>Tour</li>
               <li>Customers</li>
@@ -330,10 +374,6 @@
           </nav>
         </div>
       </div>
-
     </footer>
-
-
-
   </body>
 </html>
