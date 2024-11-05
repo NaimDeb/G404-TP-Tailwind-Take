@@ -13,10 +13,11 @@
   </head>
   <body>
     <header
-      class="bg-hero-img bg-no-repeat bg-cover bg-center py-3 min-h-[90vh]"
+      class="relative"
     >
       <!-- Logo -->
-      <nav class="flex ml-3">
+      <nav class="ml-3 absolute top-5">
+    <a href="#" class="flex">
         <img
           src="Take-assets/logo.png"
           alt="logo take"
@@ -24,26 +25,35 @@
         />
         <span class="text-3xl italic text-neutral-off-white">take</span>
       </nav>
+    </a>
+      </header>
 
-      <!-- Texte -->
+      <!-- Hero -->
+      <section class="bg-hero-img bg-no-repeat bg-cover bg-center min-h-[90vh] px-12 py-16 lg:px-24 xl:px-96 xl:static">
 
-      <div
-        class="text-neutral-off-white w-2/5 mt-[40vh] ml-14 flex flex-col gap-4 py-8"
-      >
-        <h1 class="text-6xl mb-4">Picture perfect</h1>
-        <p class="leading-6">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, alias
-          iusto modi dolorem voluptate velit eaque ratione porro veritatisr?
-        </p>
-      </div>
-    </header>
+        <div
+          class="text-neutral-off-white w-2/5 mt-[40vh] lg:mt-[30vh] flex flex-col gap-4 py-8"
+        >
+          <h1 class="text-6xl mb-4">Picture perfect</h1>
+          <p class="leading-6">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, alias
+            iusto modi dolorem voluptate velit eaque ratione porro veritatisr?
+          </p>
+        </div>
+
+
+        <img src="./Take-assets/iphone.png" alt="iphone" class="max-xl:hidden absolute xl:right-32 xl:bottom-[-175px]">
+
+
+      </section>
+
+    <main>
 
     <!-- Section start -->
-    <section class="px-12 py-16">
-      <div class="flex flex-col gap-5">
-        <h2 class="text-4xl text-neutral-off_black">Start something new</h2>
-
-        <p class="text-neutral-gray">
+    <section class="px-12 py-16 bg-neutral-off-white lg:px-24 xl:px-96">
+      <h2 class="text-4xl text-neutral-off_black py-5">Start something new</h2>
+      <div class="flex flex-col gap-5 lg:flex-row lg:justify-between lg:items-center">
+        <p class="text-neutral-gray basis-1/2">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -61,7 +71,7 @@
           numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
           quaerat voluptatem.
         </p>
-        <p class="text-neutral-gray">
+        <p class="text-neutral-gray lg:basis-1/2">
           Neque porro quisquam est. qui dolorem ipsum quia dolor sit amet.
           consectetur. adipisci velit. sed quia non numquam eius modi tempora
           incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
@@ -70,9 +80,11 @@
     </section>
 
     <!-- Sectoin cards -->
-    <section class="px-12 py-16">
+    <section class="px-12 py-16 bg-neutral-off-white lg:px-24 xl:px-96">
+
+    <div class="lg:flex">
       <a href="#">
-        <article class="text-neutral-off-white bg-pink-400 p-10">
+        <article class="text-neutral-off-white bg-[#f5989d] p-10 lg:p-16">
           <h3 class="text-3xl">Design quality</h3>
           <p class="text-sm pt-3 pb-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
@@ -83,7 +95,7 @@
       </a>
 
       <a href="#">
-        <article class="text-neutral-off-white bg-[#615f7d] p-10">
+        <article class="text-neutral-off-white bg-[#615f7d] p-10 lg:p-16">
           <h3 class="text-3xl">Built to last</h3>
           <p class="text-sm pt-3 pb-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
@@ -93,9 +105,13 @@
         </article>
       </a>
 
+    </div>
+
+    <div class="lg:flex">
+
       <a href="#">
         <article
-          class="text-neutral-off-white bg-[url('../Take-assets/box-bg.jpg')] bg-cover bg-no-repeat p-10"
+          class="text-neutral-off-white bg-[url('../Take-assets/box-bg.jpg')] bg-cover bg-no-repeat p-10 lg:p-16"
         >
           <h3 class="text-3xl">Our Clients</h3>
           <p class="text-sm pt-3 pb-5">
@@ -108,7 +124,7 @@
 
       <a href="#">
         <article
-          class="text-neutral-off-white bg-[url('../Take-assets/box-bg-lg.jpg')] bg-cover bg-no-repeat p-10"
+          class="text-neutral-off-white bg-[url('../Take-assets/box-bg-lg.jpg')] bg-cover bg-no-repeat p-10 lg:p-16"
         >
           <h3 class="text-3xl">Sign up & see why</h3>
           <p class="text-sm pt-3 pb-5">
@@ -118,9 +134,10 @@
           <a href="#" class="pt-3 text-lg font-bold">Get Started Now →</a>
         </article>
       </a>
+    </div>
 
       <a href="#">
-        <article class="text-neutral-off-white bg-[#82ca9c] p-10">
+        <article class="text-neutral-off-white bg-[#82ca9c] p-10 lg:p-16">
           <h3 class="text-3xl">Perfect pictures</h3>
           <p class="text-sm pt-3 pb-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
@@ -132,10 +149,12 @@
     </section>
 
     <!-- Section details -->
-    <section class="px-12 py-16">
+    <section class="px-12 py-16 lg:pb-32 bg-neutral-off-white lg:px-24 xl:px-96">
       <h2 class="text-4xl mb-16">A look at the details</h2>
 
-      <div class="flex flex-col gap-6 my-6">
+      <div class="flex flex-col gap-6 lg:flex-row lg:flex-wrap lg:justify-between">
+
+      <div class="flex flex-col gap-6 lg:basis-2/5">
         <h4 class="text-neutral-off_black text-sm">Web based</h4>
         <p class="text-neutral-gray">
           Lorem ipsum dolor st amet. consectetur adipisictng e14t, sed do
@@ -144,7 +163,7 @@
           altquip ex ea commodo consequat.
         </p>
       </div>
-      <div class="flex flex-col gap-6 my-6">
+      <div class="flex flex-col gap-6 lg:basis-2/5">
         <h4 class="text-neutral-off_black text-sm">Performance</h4>
         <p class="text-neutral-gray">
           Lorem ipsum dolor st amet. consectetur adipisictng e14t, sed do
@@ -153,7 +172,7 @@
           altquip ex ea commodo consequat.
         </p>
       </div>
-      <div class="flex flex-col gap-6 my-6">
+      <div class="flex flex-col gap-6 lg:basis-2/5">
         <h4 class="text-neutral-off_black text-sm">Cultural</h4>
         <p class="text-neutral-gray">
           Lorem ipsum dolor st amet. consectetur adipisictng e14t, sed do
@@ -162,7 +181,7 @@
           altquip ex ea commodo consequat.
         </p>
       </div>
-      <div class="flex flex-col gap-6 my-6">
+      <div class="flex flex-col gap-6 lg:basis-2/5">
         <h4 class="text-neutral-off_black text-sm">Sustainability</h4>
         <p class="text-neutral-gray">
           Lorem ipsum dolor st amet. consectetur adipisictng e14t, sed do
@@ -171,17 +190,20 @@
           altquip ex ea commodo consequat.
         </p>
       </div>
+
+    </div>
     </section>
 
     <!-- Section power -->
     <section
-      class="bg-[url('../Take-assets/full-image.jpg')] bg-cover bg-no-repeat px-12 py-16 text-neutral-off-white"
+      class="bg-[url('../Take-assets/full-image.jpg')] bg-cover bg-no-repeat px-12 py-16 text-neutral-off-white lg:px-24 xl:px-96 lg:py-32 xl:py-32"
     >
-      <div class="pt-16 pb-32">
-        <h2 class="text-6xl w-3/4 leading-[65px]">
+      <div class="pt-16 max-xl:pb-32 xl:pb-12 xl:pt-64">
+        <h2 class="text-6xl w-3/4 leading-[65px]
+        md:w-1/2 lg:text-7xl lg:w-[45%] xl:text-6xl xl:w-[50%]">
           More power behind every pixel.
         </h2>
-        <p class="py-8">
+        <p class="py-8 md:w-2/3 lg:text-lg lg:w-[50%]">
           Lorem ipsum dolor st amet. consectetur adipisictng e14t, sed do
           elusmod tempor Incldldunt ut labore et dolore magna aliqua. Ut entrn
           ad minim venlam, quis nostrud exercitation ul!amco laborts rmsi ut
@@ -192,9 +214,10 @@
     </section>
 
     <!-- Section Reasons -->
-    <section class="bg-[#82ca9c] text-neutral-off-white px-12 py-16">
+    <section class="bg-[#82ca9c] text-neutral-off-white px-12 py-16 lg:py-32 lg:px-24 xl:px-96">
       <h2 class="text-4xl mb-16">Reasons to get onboard</h2>
 
+    <div class="lg:flex lg:gap-8">
       <div class="flex flex-col gap-6 my-6">
         <h4 class="text-sm">Web based</h4>
         <p class="">
@@ -222,16 +245,17 @@
           altquip ex ea commodo consequat.
         </p>
       </div>
+    </div>
     </section>
 
     <!-- Section buy -->
-    <section class="px-14 py-16">
-      <ul class="flex flex-col gap-12">
-        <li>
+    <section class="px-14 py-16 lg:px-24 xl:px-96 lg:py-32">
+      <ul class="flex flex-col gap-12 lg:flex-row">
+        <li class="basis-[50%]">
           <input type="radio" name="buy" id="buy-solo" value="buy-solo" class="peer hidden" />
           <label
             for="buy-solo"
-            class=" peer-checked:bg-white peer-checked:drop-shadow-2xl peer-checked:border-2 peer-checked:border-black inline-flex p-5"
+            class="rounded-md peer-checked:bg-white peer-checked:drop-shadow-lg peer-checked:shadow-black inline-flex p-5"
           >
           <div class="block">
             <div
@@ -241,8 +265,8 @@
             </div>
 
             <div class="flex flex-col gap-4">
-              <h3 class="text-2xl">Go it solo</h3>
-              <p>
+              <h3 class="text-neutral-off_black text-2xl lg:text-3xl">Go it solo</h3>
+              <p class="lg:leading-8 text-neutral-off_black">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
                 voluptatem delectus aspernatur alias cupiditate cum id deserunt
                 libero nesciunt voluptas.
@@ -252,7 +276,7 @@
                 class="bg-[#82ca9c] px-3 py-2 rounded text-neutral-off-white font-bold text-sm w-fit"
                 >BUY NOW $9</a
               >
-              <div class="flex gap-4 text-neutral-gray text-3xl">
+              <div class="flex gap-4 text-neutral-gray text-3xl lg:text-4xl items-center">
                 <i class="fab fa-apple"></i>
                 <i class="fab fa-windows"></i>
               </div>
@@ -262,11 +286,11 @@
           </label>
         </li>
 
-        <li>
+        <li  class="basis-[50%]">
           <input type="radio" name="buy" value="buy-team" id="buy-team" class="peer hidden" />
           <label
             for="buy-team"
-            class="peer-checked:bg-white peer-checked:drop-shadow-2xl peer-checked:border-2 peer-checked:border-black inline-flex p-5"
+            class="rounded-md peer-checked:bg-white peer-checked:drop-shadow-lg peer-checked:shadow-black  inline-flex p-5"
           >
           <div class="block">
             <div
@@ -275,8 +299,8 @@
               MOST POPULAR
             </div>
             <div class="flex flex-col gap-4">
-              <h3 class="text-2xl">Team Plan</h3>
-              <p>
+              <h3 class="text-neutral-off_black text-2xl lg:text-3xl">Team Plan</h3>
+              <p class="lg:leading-8 text-neutral-off_black">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
                 voluptatem delectus aspernatur alias cupiditate cum id deserunt
                 libero nesciunt voluptas.
@@ -286,7 +310,7 @@
                 class="bg-[#82ca9c] px-3 py-2 rounded text-neutral-off-white font-bold text-sm w-fit"
                 >BUY NOW $18</a
               >
-              <div class="flex gap-4 text-neutral-gray text-3xl">
+              <div class="flex gap-4 text-neutral-gray text-3xl lg:text-4xl items-center">
                 <i class="fab fa-apple"></i>
                 <i class="fab fa-windows"></i>
               </div>
@@ -296,13 +320,18 @@
 
           </label>
         </li>
+
       </ul>
     </section>
 
+    </main>
+
     <!-- Footer -->
     <footer
-      class="px-12 py-32 bg-[#192431] flex flex-col gap-3 text-neutral-off-white"
+      class="px-12 py-32 bg-[#192431] xl:flex xl:justify-between text-neutral-off-white lg:px-24 xl:px-96 lg:py-32 lg:gap-6"
     >
+
+    <div class="flex flex-col gap-3 xl:basis-1/2">
       <p class="text-sm">Get in touch</p>
       <p class="text-sm">
         Lorem ipsum dolor sit amet. consectetur adipisicing elit. sed do eiusmod
@@ -310,10 +339,11 @@
         veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
       </p>
-      <p class="text-sm">Stay in touch</p>
+      
 
       <!-- Input -->
-      <div class="pb-4">
+      <div class="pb-4 xl:hidden">
+        <p class="text-sm mb-3">Stay in touch</p>
         <div class="relative">
           <input
             type="text"
@@ -338,12 +368,12 @@
           <h6>Resources</h6>
           <nav>
             <ul>
-              <li>Tour</li>
-              <li>Customers</li>
-              <li>Pricing and</li>
-              <li>Plans</li>
-              <li>New Features</li>
-              <li>Education</li>
+              <li><a href="#">Tour</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">Pricing and</a></li>
+              <li><a href="#">Plans</a></li>
+              <li><a href="#">New Features</a></li>
+              <li><a href="#">Education</a></li>
             </ul>
           </nav>
         </div>
@@ -351,12 +381,12 @@
           <h6>How To's</h6>
           <nav>
             <ul>
-              <li>Tour</li>
-              <li>Customers</li>
-              <li>Pricing and</li>
-              <li>Plans</li>
-              <li>New Features</li>
-              <li>Education</li>
+              <li><a href="#">Tour</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">Pricing and</a></li>
+              <li><a href="#">Plans</a></li>
+              <li><a href="#">New Features</a></li>
+              <li><a href="#">Education</a></li>
             </ul>
           </nav>
         </div>
@@ -364,15 +394,38 @@
           <h6>Resources</h6>
           <nav>
             <ul>
-              <li>Tour</li>
-              <li>Customers</li>
-              <li>Pricing and</li>
-              <li>Plans</li>
-              <li>New Features</li>
-              <li>Education</li>
+              <li><a href="#">Tour</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">Pricing and</a></li>
+              <li><a href="#">Plans</a></li>
+              <li><a href="#">New Features</a></li>
+              <li><a href="#">Education</a></li>
             </ul>
           </nav>
         </div>
+      </div>
+
+    </div>
+
+      <!-- Input xl -->
+      <div class="pb-4 max-xl:hidden xl:basis-1/2">
+        <p class="text-sm mb-3">Stay in touch</p>
+        <div class="relative">
+          <input
+            type="text"
+            name="email"
+            class="block w-full rounded border-0 py-1.5 pr-20 text-gray-900"
+          />
+          <div
+            class="absolute -inset-y-0 right-0 bg-[#82ca9c] text-neutral-off-white w-8 text-xl p-1 text-center"
+          >
+            ✓
+          </div>
+        </div>
+        <p class="text-xs text-gray-400 py-1">
+          We dont send spam. Actually, who are we kidding, we'll spam the shit
+          out of you're inbox
+        </p>
       </div>
     </footer>
   </body>
